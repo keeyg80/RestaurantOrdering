@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menudashboard"
+            android:icon="@drawable/ic_baseline_dashboard"
+            android:title="Dashboard" />
+
+    </group>
+    <item android:title="Administrator">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_menuuser"
+                    android:icon="@drawable/ic_baseline_people"
+                    android:title="User" />
+                <item
+                    android:id="@+id/nav_menufood"
+                    android:icon="@drawable/ic_baseline_food"
+                    android:title="Food" />
+                <item
+                    android:id="@+id/nav_menubeverage"
+                    android:icon="@drawable/ic_baseline_beverage"
+                    android:title="Beverage" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="User">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_menuprofile"
+                    android:icon="@drawable/ic_baseline_profile"
+                    android:title="profile" />
+                <item
+                    android:id="@+id/nav_menupassword"
+                    android:icon="@drawable/ic_baseline_password"
+                    android:title="Change Password" />
+                <item
+                    android:id="@+id/nav_menulogout"
+                    android:icon="@drawable/ic_baseline_logout"
+                    android:title="Log out" />
+            </group>
+        </menu>
+    </item>
+</menu>

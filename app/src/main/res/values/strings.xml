@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Restaurant Ordering</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="userid">userid</string>
+    <string name="password">password</string>
+    <string name="login">LOGIN</string>
+    <string name="companyname">Company Name</string>
+</resources>

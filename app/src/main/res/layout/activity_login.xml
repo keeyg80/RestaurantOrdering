@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:background="@color/light_background"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/iv_loginlogo"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_launcher_background"
+        android:padding="16dp"
+        android:transitionName="logo"/>
+
+    <TextView
+        android:id="@+id/tv_loginComName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/companyname"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/text_color"
+        android:layout_marginBottom="10dp"
+        android:transitionName="companyName"/>
+
+    <soup.neumorphism.NeumorphCardView
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:neumorph_shapeType="pressed">
+        <EditText
+            android:id="@+id/et_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/userid"
+            android:textColor="@color/text_color"
+            android:paddingLeft="20dp"
+            android:backgroundTint="@color/Transparent"/>
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:neumorph_shapeType="pressed">
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:backgroundTint="@color/Transparent"
+            android:hint="@string/password"
+            android:paddingLeft="20dp"
+            android:textColor="@color/text_color"/>
+    </soup.neumorphism.NeumorphCardView>
+    <soup.neumorphism.NeumorphButton
+        style="@style/Widget.Neumorph.Button"
+        android:id="@+id/btn_login"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color"
+        android:text="@string/login" />
+    <TextView
+        android:id="@+id/tv_displayText"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="176dp"
+    android:background="@drawable/whitebg"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:padding="20dp">
+    <ImageView
+        android:id="@+id/iv_navheaderlogo"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@mipmap/ic_launcher_round"
+        android:paddingTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_navheadercompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lobster"
+        android:includeFontPadding="false"
+        android:paddingTop="10dp"
+        android:text="@string/companyname"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_navheaderuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/courgette"
+        android:paddingTop="5dp"
+        android:text="User and Role"
+        android:textColor="#000"
+        android:textSize="15sp" />
+
+</LinearLayout>
